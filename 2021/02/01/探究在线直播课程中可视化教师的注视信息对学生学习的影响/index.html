@@ -1,0 +1,598 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>探究在线直播课程中可视化教师的注视信息对学生学习的影响 | 羽树.🌱</title><meta name="keywords" content="论文,人机交互,眼动仪"><meta name="author" content="羽树"><meta name="copyright" content="羽树"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="作者：黄越，谭哲，李鹏, 马笑晗  摘要： 在线教育是以网络作为媒介和载体的教学方式,近些年来发展迅猛。和传统的线下教学相比，学生可以随时随地进行学习，打破了时间和空间的限制。教学形式多种多样，有同时-同地的线下面对面教学、同时-不同地的网络直播教学、不同时-不同地的录播课堂。而在线直播课程中由于摄像头和人眼的高度差，会形成“视差”导致师生之间眼神交流的缺失。为了解决这个问题并探究可视化教师的注">
+<meta property="og:type" content="article">
+<meta property="og:title" content="探究在线直播课程中可视化教师的注视信息对学生学习的影响">
+<meta property="og:url" content="http://example.com/2021/02/01/%E6%8E%A2%E7%A9%B6%E5%9C%A8%E7%BA%BF%E7%9B%B4%E6%92%AD%E8%AF%BE%E7%A8%8B%E4%B8%AD%E5%8F%AF%E8%A7%86%E5%8C%96%E6%95%99%E5%B8%88%E7%9A%84%E6%B3%A8%E8%A7%86%E4%BF%A1%E6%81%AF%E5%AF%B9%E5%AD%A6%E7%94%9F%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BD%B1%E5%93%8D/index.html">
+<meta property="og:site_name" content="羽树.🌱">
+<meta property="og:description" content="作者：黄越，谭哲，李鹏, 马笑晗  摘要： 在线教育是以网络作为媒介和载体的教学方式,近些年来发展迅猛。和传统的线下教学相比，学生可以随时随地进行学习，打破了时间和空间的限制。教学形式多种多样，有同时-同地的线下面对面教学、同时-不同地的网络直播教学、不同时-不同地的录播课堂。而在线直播课程中由于摄像头和人眼的高度差，会形成“视差”导致师生之间眼神交流的缺失。为了解决这个问题并探究可视化教师的注">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tziooo-1304905718.cos.ap-guangzhou.myqcloud.com/2222.png">
+<meta property="article:published_time" content="2021-02-01T05:52:05.000Z">
+<meta property="article:modified_time" content="2021-02-01T06:35:05.622Z">
+<meta property="article:author" content="羽树">
+<meta property="article:tag" content="论文">
+<meta property="article:tag" content="人机交互">
+<meta property="article:tag" content="眼动仪">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tziooo-1304905718.cos.ap-guangzhou.myqcloud.com/2222.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/02/01/%E6%8E%A2%E7%A9%B6%E5%9C%A8%E7%BA%BF%E7%9B%B4%E6%92%AD%E8%AF%BE%E7%A8%8B%E4%B8%AD%E5%8F%AF%E8%A7%86%E5%8C%96%E6%95%99%E5%B8%88%E7%9A%84%E6%B3%A8%E8%A7%86%E4%BF%A1%E6%81%AF%E5%AF%B9%E5%AD%A6%E7%94%9F%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BD%B1%E5%93%8D/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-02-01 14:35:05'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="wizard-scene"><div class="wizard-objects"><div class="wizard-square"></div><div class="wizard-circle"></div><div class="wizard-triangle"></div></div><div class="wizard"><div class="wizard-body"></div><div class="wizard-right-arm"><div class="wizard-right-hand"></div></div><div class="wizard-left-arm"><div class="wizard-left-hand"></div></div><div class="wizard-head"><div class="wizard-beard"></div><div class="wizard-face"><div class="wizard-adds"></div></div><div class="wizard-hat"><div class="wizard-hat-of-the-hat"></div><div class="wizard-four-point-star --first"></div><div class="wizard-four-point-star --second"></div><div class="wizard-four-point-star --third"></div></div></div></div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 爱好</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-gallery"></i><span> 图库</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://tziooo-1304905718.cos.ap-guangzhou.myqcloud.com/2222.png)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">羽树.🌱</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 爱好</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-gallery"></i><span> 图库</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">探究在线直播课程中可视化教师的注视信息对学生学习的影响</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-02-01T05:52:05.000Z" title="发表于 2021-02-01 13:52:05">2021-02-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-02-01T06:35:05.622Z" title="更新于 2021-02-01 14:35:05">2021-02-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>作者：黄越，谭哲，李鹏, 马笑晗</p>
+</blockquote>
+<p><strong>摘要：</strong></p>
+<p>在线教育是以网络作为媒介和载体的教学方式,近些年来发展迅猛。和传统的线下教学相比，学生可以随时随地进行学习，打破了时间和空间的限制。教学形式多种多样，有同时-同地的线下面对面教学、同时-不同地的网络直播教学、不同时-不同地的录播课堂。而在线直播课程中由于摄像头和人眼的高度差，会形成“视差”导致师生之间眼神交流的缺失。为了解决这个问题并探究可视化教师的注视信息对学生的主观感受、学习体验、社会存在感以及注意力分配的的影响，我们设计了组间实验进行对比。实验结论显示,有教师注视信息能够提高学生的社会存在感，能够提升学习体验中的参与度，并且该形式对用户没有造成额外的认知负荷。从而为线上直播课程提供了一种设计方案。</p>
+<p><strong>关键词</strong>：</p>
+<p>眼动追踪；注视；在线直播课程；学习体验；认知负荷；社会存在感</p>
+<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1 引言"></a>1 引言</h2><p>在线教育或称远程教育、在线学习，现行概念中一般指的是一种基于网络的学习行为，与网络培训概念相似。在线教育顾名思义，是以网络为载体的教学方式，通过网络，学生与教师即使相隔万里也可以开展教学活动；此外，借助网络课件，学生还可以随时随地进行学习，真正打破了时间和空间的限制，具有跨越时空和人力物力限制的资源利用最大化、随时随地进行选择的学习行为自主化、师生交流与学生自学等学习形式交互化、个性化的教学形式修改化、利用新型教育工具即网络的教学管理自动化的诸多优势与特点。</p>
+<h3 id="1-1-在线教学背景描述"><a href="#1-1-在线教学背景描述" class="headerlink" title="1.1 在线教学背景描述"></a>1.1 在线教学背景描述</h3><p>中国的在线教育市场规模巨大，截止到2019年，中国在线市场规模突破3200亿，月独立设备总数持续增长达4.4亿台。2020年由于新冠疫情而开展的“停课不停学”活动，无论是小学生还是大学生都必须宅在家中学习网课，以网课或者视频直播的方式学习知识。疫情对线上教育的积极作用主要在于提升了学生、学校端对于在线教育的认知和意识，为以后使用网课形式进行教学打下了基础。</p>
+<p>虽然线上教育发展如火如荼，但这其中也存在一些问题，比如在教学过程中师生双方眼神交流的缺失。人类的交际有两种渠道：语言和非语言的。非语言包括这些词语的说话方式、面部表情、眼神注视、身体动作等。在视频通讯过程中，相比较于实际面对面的交流，缺乏眼神交流的原因在于摄像头是位于设备的上方，这会使参与者认为对方的眼神注视在下方，从而产生了所谓的“视差”的问题。</p>
+<h3 id="1-2-眼动追踪技术"><a href="#1-2-眼动追踪技术" class="headerlink" title="1.2 眼动追踪技术"></a>1.2 眼动追踪技术</h3><p>眼动追踪是一项科学应用技术，用户无需触摸屏幕即可翻动页面。从原理上看，眼球追踪主要是研究眼球运动信息的获取、建模和模拟，用途颇为广泛。而提取眼动信息可以根据眼球和眼球周边的特征变化进行跟踪，根据虹膜角度变化进行跟踪，还可以主动投射等光束到虹膜来提取特征。</p>
+<p>综上，基于眼动追踪，本研究将线上直播课程中的教师注视信息可视化，在学生端设计一种视觉表达方式来呈现教师的注视信息从而解决“视差”问题。对比前人研究，本研究的创新点在于：本研究关注的是线上实时直播课程中教师的实时注视信息，即实时的眼神交流对学生社会存在感以及主观心理感受的影响，为以后的在线教学网课提供了一种提升线上教学效果的设计思路。</p>
+<h2 id="2-相关工作"><a href="#2-相关工作" class="headerlink" title="2 相关工作"></a>2 相关工作</h2><h3 id="2-1视频通信中眼神交流信息传输的缺失"><a href="#2-1视频通信中眼神交流信息传输的缺失" class="headerlink" title="2.1视频通信中眼神交流信息传输的缺失"></a>2.1视频通信中眼神交流信息传输的缺失</h3><p>人类的交际有两种渠道：语言的和非语言的。语言是会话中实际说出的词语，非言语包括这些词语的说话方式（副语言）、面部表情、眼神注视、手势、身体动作、姿势和接触、身体接近和环境[1]。其中，眼神注视在交流中起着重要的作用，包括帮助调节和同步对话、提供听者的感知信息、传达感情、传达自然的人际关系[2]。通信技术发展，使实时视频通信成为一种更高效、简单、便捷的通信方式，以弥补远程交流与语音通讯的不足。但由于视频通信中非语言信息传输的缺失，对比面对面交流，视频通信还是存在许多缺点。其中之一就是缺乏眼神交流。由于在视频通信时，摄像头位于设备的上方，这会使远程参与者认为对方是向下看的，从而产生“视差”[3]。在多人视频通信中，缺乏眼神交流会导致参与者不清楚演讲者在向谁讲话，造成混乱[4]</p>
+<p>先前的研究者对于弥补眼神交流的方法可以分为两类：1. 通过硬件或软件使演讲者同时看到参与者的脸与摄像头，或者对演讲者的脸部和眼睛进行修正。Tapia等人[5]利用投影仪将远程参与者的脸投影到不完全透明的半镀银镜子制成的小型相机的表面上，从而实现眼神交流。苹果和索尼推出了新型液晶显示器，将摄像头嵌入屏幕后面，也可实现眼神交流。Chih-Fan Hsu等人[3]利用算法扭曲和修正演讲者眼睛的图像，从而建立眼神交流。但这些方法较多应用于一对一视频的场景，对于参与者较多的网络直播课程并不实际。2. 实时注视可视化，即通过眼动追踪技术采集演讲者的注视信息，并通过符号的形式将注视信息实时展现在界面上。</p>
+<h3 id="2-2-基于眼动追踪的注视可视化与在线教学"><a href="#2-2-基于眼动追踪的注视可视化与在线教学" class="headerlink" title="2.2 基于眼动追踪的注视可视化与在线教学"></a>2.2 基于眼动追踪的注视可视化与在线教学</h3><p>根据CSCW分类法，我们可以将教学形式分为三类，同时-同地的线下面对面教学、同时-不同地的网络直播教学、不同时-不同地的录播课堂（如MOOCs）[6]。在线下面对面教学中，实证研究结果显示，教师的注视对学生回忆课程内容有正向作用[7]。对于线上教学视频，研究表明，教师的目光不仅能够引导学习者的注意分配，同时还能够提高教学视频与学习者的社会互动性[8]。杨九民等人将线上教学视频中教师的目光分为四类并进行实证研究，结果表示，教师的持续引导目光有利于提高学习者的学习效果，教师的间断引导目光能让学习者体会到更多的社会互动[9]。</p>
+<p>关于在教学中使用眼动追踪技术进行实时注视共享的研究大致分为4类，见表1所示：1.在录播形式的教学视频中，教师对教学内容的注视对于学生理解和学习的影响[10] [11]。2. 将线上直播课程看作是一种特殊的专家-新手共同协作模式，通过教师注视对于教学内容的注视对于学生理解和学习的影响。3. 通过展示学生的注视信息帮助老师更有效的制定的安排教学策略[12]。4. 通过展示教师与学生双方的注视从而帮助双方更好地教授与学习[13]。</p>
+<p>由前文可知，教师的目光对于学生的社会互动性与学习效果都有显著影响，然而，上述研究大多针对可视化师生对于内容的注视，而较少研究师生相互间的眼神交流对教与学的影响。其次，上述研究中教学视频的形式大多是录播，较少研究线上直播课程中实时注视对教学的影响。第三，上述研究大多以学生的学习成绩或观看视频时的行为（如暂停或回放的次数）作为量化的指标来测量学习效果，而较少评估学生的主观心理感受。</p>
+<p>因此，对比前人的研究，本次研究的创新点在于：1. 关注了教师与学生之间的眼神交流对学生学习与社会存在感的影响。2. 关注了前人研究较少的线上直播课程中的实时注视信息。3. 在测量方面，我们选取学生的主观心理感受作为测量注视信息对学生学习影响的维度。</p>
+<center>表1：可视化注视信息与网络课程研究总结</center>
+
+<table>
+<thead>
+<tr>
+<th>相关文献</th>
+<th>教学形式</th>
+<th>自变量</th>
+<th>因变量</th>
+<th>研究方法</th>
+<th>注视形式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[10]</td>
+<td>MOOCs</td>
+<td>教师的注视（有、无）教师的手势（有、无）</td>
+<td>学生学习收获</td>
+<td>实验法</td>
+<td><img src="https://tziooo-1304905718.cos.ap-guangzhou.myqcloud.com/20210201140418.png"></td>
+</tr>
+<tr>
+<td>[11]</td>
+<td>MOOCs</td>
+<td>教师的注视（有、无）视频的歧义程度（高、低）</td>
+<td>学生学习行为线性化（+）</td>
+<td>实验法</td>
+<td>/</td>
+</tr>
+<tr>
+<td>[12]</td>
+<td>线上直播课程</td>
+<td>学生的注视信息（有、无）</td>
+<td>老师的教学策略</td>
+<td>观察法访谈法</td>
+<td><img src="https://tziooo-1304905718.cos.ap-guangzhou.myqcloud.com/20210201140459.png"></td>
+</tr>
+<tr>
+<td>[13]</td>
+<td>线上直播课程</td>
+<td>老师与学生的双向注视</td>
+<td>学生学习效果老师教学策略</td>
+<td>问卷法访谈法</td>
+<td><img src="https://tziooo-1304905718.cos.ap-guangzhou.myqcloud.com/20210201140518.png"></td>
+</tr>
+</tbody></table>
+<h3 id="2-3-注视形式"><a href="#2-3-注视形式" class="headerlink" title="2.3 注视形式"></a>2.3 注视形式</h3><p>在前人的研究中，注视的可视化呈现形式也是经常被研究的课题之一。Yanxia Zhang等人[14]的研究发现，圆圈和轨迹的形式更易造成注意力分散，高亮和聚光灯形式不易分散注意力。Joshua Newn等人[15]研究了在游戏中人们对不同的注视表现形式的感知程度和偏好。综合前人的研究，我们提出了我们预期的注视表现形式：1. 在学生投入听课时的感知程度低，不易分散学生上课的注意力。2. 在学生分心时的感知程度高，对学生有警示作用。</p>
+<p>我们设计了三种注视形式，分别是1. 高亮注视条 2. 边缘模糊注视条 3. 高亮“小眼睛”。最后通过优缺点的比较，选择“小眼睛”的形式作为最终的注视形式。</p>
+<h2 id="3-当前研究"><a href="#3-当前研究" class="headerlink" title="3 当前研究"></a>3 当前研究</h2><h3 id="3-1-实验设计"><a href="#3-1-实验设计" class="headerlink" title="3.1 实验设计"></a>3.1 实验设计</h3><p>本研究目的在于，探索在线直播课程学习中，可视化教师的注视信息对学生学习体验，认知负荷，社会存在感和注意力分配的影响。我们设计了一种可视化教师注视信息的形式，基于此，研究的自变量设计为教师注视信息，研究因变量包括学习效果，认知负荷，社会存在感，注意力分配，以组间对照的方式进行实验。基于前人研究和预实验，我们提出四个实验假设：</p>
+<p>H1:有注视信息会提高学生的学习体验。</p>
+<p>H2:有注视信息会提高学生的社会存在感。</p>
+<p>H3:有注视信息不会增加学生的认知负荷。</p>
+<p>H4:有注视信息会影响学生的注意力分配。</p>
+<h3 id="3-2-被试"><a href="#3-2-被试" class="headerlink" title="3.2 被试"></a>3.2 被试</h3><p>本研究选取在校大学生30名（男10名，女20名；年龄18—25岁；母语为中文）参与了实验，并分为10组，每组三名学生，其中五组为有教师注视信息的实验组，另五组为对照组，无教师视信息。教师为研究人员，和学生不认识。所有参与者都签署了一份同意书，并获得了10元的补偿。</p>
+<h3 id="3-3-实验材料，设备和环境"><a href="#3-3-实验材料，设备和环境" class="headerlink" title="3.3 实验材料，设备和环境"></a>3.3 实验材料，设备和环境</h3><p><strong>3.3.1  课程材料。</strong>研究以大学慕课《天文漫谈》为参考，撰写了10分钟的课程脚本和PPT，用于教师的线上教学。研究要求教师尽量以相同的课程脚本，语气，语调及描述方式进行教学，尽量避免了在线学习过程中老师行为对学生的干扰。</p>
+<p><strong>3.3.2 实验设备与环境。</strong>老师使用一台苹果系统的台式电脑，每组三位学生使用相同尺寸的笔记本电脑，其中一台连接了屏幕式眼动仪（Tobii Pro X3-120），每组实验进行期间，老师和三位学生分别被安排在一个独立的安静房间，通过视频会议软件zoom上课。</p>
+<h3 id="3-4-注视形式设计"><a href="#3-4-注视形式设计" class="headerlink" title="3.4 注视形式设计"></a>3.4 注视形式设计</h3><p>我们设计的“小眼睛”可视化形式通过Dreamweaver编程实现鼠标悬浮显示。该形式感知程度中等，包含信息量较少，在学生投入听课时不易分散其注意力，而在他们分心时则有警示作用，且眼睛符号是对注视目光的隐喻，容易理解，但眼睛的形式可能使学生有畏惧感。</p>
+<p>如图1所示，在实验过程中，我们采用绿野仙踪的方法，通过鼠标悬浮模拟通过眼动追踪实现的注视。小眼睛随老师鼠标移动而上下滑动，并被投屏至被试的视频界面上，当停留在某位被试的头像旁时，则象征着老师正在注视着该被试。</p>
+<p><img src="https://tziooo-1304905718.cos.ap-guangzhou.myqcloud.com/20210201140538.png"> </p>
+<center>图1：可视化形式</center>
+
+<h3 id="3-5-实验变量与测量"><a href="#3-5-实验变量与测量" class="headerlink" title="3.5 实验变量与测量"></a>3.5 实验变量与测量</h3><p>学习体验测量采用Andrew T.Stull（2018）[28]编制的学习体验量表，该量表由三个维度组成，分别是学习动机，师生互动感，参与感，由10道李克特七分量表组成。本研究中学习体验的Cronbach’s alpha为0.742。</p>
+<p>认知负荷测量采用Pass和van Merrienboer（1994）[29]编制的认知负荷自评量表（cognitive load subjective ratings），共两个项目，被试在学习任务结束之后，分别对其学习过程的心理努力和任务难度进行评价。问卷采用9点计分，得分越高说明被试在学习过程中体验到的认知负荷越高，量表的内部一致性系数为0.74。</p>
+<p>社会存在感采用曹建霞[30]等修订的社会存在感问卷，该问卷参考了Short等和蔡珮等社会存在感量表，分为投入度、互动性、亲切感、沉浸感和直观感五个维度。根据本研究的实验目的，在此基础上进行了适当的修改，选取了投入度、沉浸感与互动性三个维度，问卷共由8道李克特七分量表题组成。本研究中社会存在感的Cronbach’s alpha为0.756。</p>
+<p>注意力是指个体在感知外界事物过程中视觉活动的指向和集中情况，能够反映个体对外界事物的加工程度，研究主要分析Tobii pro眼动设备记录的总注视时间和眼跳次数这两个指标。总注视时间（Total Fixation Duration）是指该统计指标计算的是一个兴趣区（或属于一个兴趣区组中的所有兴趣区）中所有注视点的持续时间之和，常用来反映学习者对该内容的加工深度或关注程度。眼跳次数是连续两次注视之间的快速眼球运动，即注视点间眼球产生的跳动，表明了提取信息的效率和时间，能用来衡量学习者参与信息处理的程度和信息整合的难度。在本次实验中，视频界面被划分四个兴趣区，如图2所示，分别为教学内容区，注视条区，教师画面区，学生画面区。</p>
+<p><img src="https://tziooo-1304905718.cos.ap-guangzhou.myqcloud.com/20210201140550.png"> </p>
+<center>图2：不同的兴趣区</center>
+
+<p>除了实验变量的测量，每组实验后还进行了半结构化访谈，我们想了解可视化教师的注视信息是否会对被试学习效果，注意力分配产生影响，以及被试对目前设计的态度和感受，为何喜欢或厌恶；我们还让被试进行了参与式设计，以头脑风暴的形式探索可接受度更高的设计想法，这将给我们未来的研究一些启发。</p>
+<h3 id="3-6-实验流程"><a href="#3-6-实验流程" class="headerlink" title="3.6 实验流程"></a>3.6 实验流程</h3><p>实验流程分为四个阶段，总用时大约为25分钟。</p>
+<p>在第一阶段，被试到齐之前研究人员调试实验设备，将三台学生的电脑和一台老师的电脑进行视频连线，确保麦克风，耳机，画面正常。 </p>
+<p>在第二阶段，被试被告知实验流程和注意事项，向有注视信息的实验组解释“小眼睛”的含义，让他们相信“小眼睛”是老师真实目光的象征，并被要求签署一份实验知情同意书。其后研究人员带领被试到三台笔记本电脑前就坐，研究人员选择一位视力较好的被试坐在装有眼动仪的电脑前，在正式实验之前，对眼动仪进行调试和校准。 </p>
+<p>  在第三阶段，准备工作完成后，老师开始在视频会议软件上课，对“天文漫谈”材料进行讲解，中间设有提问环节，被试只需坐着听课即可，上课用时约为9分钟。在注视信息的实验组，老师通过操纵鼠标上下移动“小眼睛”，并投屏呈现在被试的视频界面上，每次实验操作频率保持一致；在无注视信息的对照组，老师无须操纵“小眼睛”，其他与实验组无异。</p>
+<p>  在第四阶段，课程结束后，被试受邀填写一份关于学习体验，认知负荷和社会存在感的量表，完成后让三位被试聚在一起，进行5分钟的半结构化访谈，以了解他们对课程学习，注视形式，学习体验等方面的态度和感受。</p>
+<h2 id="4-实验结果"><a href="#4-实验结果" class="headerlink" title="4.实验结果"></a>4.实验结果</h2><p>实验共得到27个有效量表数据，其中有注视信息组（a组）有13个有效数据，无注视信息组（b组）有14个有效数据。共收集8个有效眼动数据，每组各4个，为了避免每组直播时长的误差，各兴趣区注视时间以该区注视时间和总注视时间的比例统计。</p>
+<p>Shapiro-Wilk正态性检验表明数据为正态分布（p＞0.05）且通过方差齐性检验（p＞0.05）。本研究以被试的学习体验、社会存在感、认知负荷、平均注视时间及眼跳次数为因变量，以有无注视信息为自变量，进行独立样本t检验。</p>
+<h3 id="4-1学习体验"><a href="#4-1学习体验" class="headerlink" title="4.1学习体验"></a>4.1学习体验</h3><p>与假设H1相反，独立样本t检验结果显示，有注视信息组与无注视信息组的学习体验没有显著差异（F=0.814，p=0.071＞0.05），即注视信息对学习者的学习体验没有显著影响。</p>
+<p>对此进行进一步分析发现，学习体验的三个维度中，注视信息对学习者参与度的影响有显著差异（F=2.058，p=0.041＜0.05），具体表现为有注视信息组的参与度高于无注视信息组的参与度，而对学习者的学习动机（F=0.793，p=0.167＞0.05）和师生互动感（F=0.204，p=0.355＞0.05）的影响均不显著。</p>
+<center>表2：学习体验及其维度独立样本t检验结果</center>
+
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>组别</th>
+<th>M</th>
+<th>SD</th>
+<th>t</th>
+<th>Sig.（双尾）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>学习体验</td>
+<td>a组</td>
+<td>45.23</td>
+<td>6.016</td>
+<td>1.887</td>
+<td>.071</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>40.21</td>
+<td>7.628</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>学习动机维度</td>
+<td>a组</td>
+<td>26.00</td>
+<td>4.673</td>
+<td>1.425</td>
+<td>.167</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>23.14</td>
+<td>5.655</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>师生互动感维度</td>
+<td>a组</td>
+<td>9.77</td>
+<td>2.351</td>
+<td>0.942</td>
+<td>.355</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>9.00</td>
+<td>1.881</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>参与度维度</td>
+<td>a组</td>
+<td>9.46</td>
+<td>1.198</td>
+<td>2.154</td>
+<td>.041</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>8.07</td>
+<td>2.018</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="4-2-社会存在感"><a href="#4-2-社会存在感" class="headerlink" title="4.2 社会存在感"></a>4.2 社会存在感</h3><p>与假设H2一致，有注视信息组与无注视信息组的社会存在感存在显著差异（F=2.303，p=0.024＜0.05），即注视信息对学习者的社会存在感有显著影响，具体表现为有注视信息组的社会存在感显著高于无注视信息组的社会存在感。</p>
+<center>表3：社会存在感独立样本t检验结果</center>
+
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>组别</th>
+<th>M</th>
+<th>SD</th>
+<th>t</th>
+<th>Sig.（双尾）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>社会存在感</td>
+<td>a组</td>
+<td>29.46</td>
+<td>8.161</td>
+<td>2.400</td>
+<td>.024</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>23.07</td>
+<td>5.512</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="4-3-认知负荷"><a href="#4-3-认知负荷" class="headerlink" title="4.3 认知负荷"></a>4.3 认知负荷</h3><p>与假设H3一致，有注视信息组与无注视信息组的认知负荷没有显著差异（F=2.132，p=0.609＞0.05），即注视信息对学习者的认知负荷没有显著影响。</p>
+<center>表4：认知负荷独立样本t检验结果</center>
+
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>组别</th>
+<th>M</th>
+<th>SD</th>
+<th>t</th>
+<th>Sig.（双尾）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>认知负荷</td>
+<td>a组</td>
+<td>9.38</td>
+<td>2.181</td>
+<td>0.518</td>
+<td>.609</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>8.86</td>
+<td>3.009</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="4-4-注意力分配"><a href="#4-4-注意力分配" class="headerlink" title="4.4 注意力分配"></a>4.4 注意力分配</h3><p>因眼动数据中只有三组变量满足独立样本t检验条件，故对满足条件的三组变量进行独立样本t检验，对剩下四组进行Mann-Whitney U检验。</p>
+<p>与假设H4相反，结果（如表5、6）显示有注视信息组与无注视信息组的兴趣区注视时长与眼跳次数均无显著差异（p＞0.05），即注视信息对学习者的注意力分配没有显著影响。</p>
+<p><img src="https://tziooo-1304905718.cos.ap-guangzhou.myqcloud.com/20210201140603.png"> </p>
+<center>图3：兴趣区注视时长描述性统计结果</center>
+
+
+
+<center>表5：眼动数据分析结果1</center>
+
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>组别</th>
+<th>M</th>
+<th>SD</th>
+<th>t</th>
+<th>Sig.（双尾）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>注视条区注视时间比例（%）</td>
+<td>a组</td>
+<td>0.20</td>
+<td>0.129</td>
+<td>.068</td>
+<td>.948</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>0.19</td>
+<td>0.236</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>教师画面区注视时间比例（%）</td>
+<td>a组</td>
+<td>6.14</td>
+<td>3.023</td>
+<td>-.090</td>
+<td>.931</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>6.42</td>
+<td>5.373</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>教学内容区和学生画面区间眼跳次数</td>
+<td>a组</td>
+<td>41.25</td>
+<td>28.040</td>
+<td>-.314</td>
+<td>.764</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>46.25</td>
+<td>15.064</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<center>表6：眼动数据分析结果2</center>
+
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>组别</th>
+<th>M</th>
+<th>SD</th>
+<th>渐近显著性（双尾）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>教学内容区注视时间比例（%）</td>
+<td>a组</td>
+<td>85.19</td>
+<td>9.929</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>89.09</td>
+<td>3.760</td>
+<td></td>
+</tr>
+<tr>
+<td>学生画面区注视时间比例（%）</td>
+<td>a组</td>
+<td>8.46</td>
+<td>7.335</td>
+<td>.733</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>4.29</td>
+<td>1.937</td>
+<td></td>
+</tr>
+<tr>
+<td>教学内容区和老师画面区间眼跳次数</td>
+<td>a组</td>
+<td>21.00</td>
+<td>5.534</td>
+<td>.885</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>26.00</td>
+<td>19.131</td>
+<td></td>
+</tr>
+<tr>
+<td>老师画面区和学生画面区间眼跳次数</td>
+<td>a组</td>
+<td>21.75</td>
+<td>19.939</td>
+<td>.564</td>
+</tr>
+<tr>
+<td></td>
+<td>b组</td>
+<td>7.00</td>
+<td>4.163</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="5-讨论"><a href="#5-讨论" class="headerlink" title="5 讨论"></a>5 讨论</h2><h3 id="5-1注视信息是否会分散学生注意力"><a href="#5-1注视信息是否会分散学生注意力" class="headerlink" title="5.1注视信息是否会分散学生注意力"></a>5.1注视信息是否会分散学生注意力</h3><p>关于在教学视频中呈现注视信息是否会影响学生的注意力也是学者们一直在探究的问题。我们从访谈信息中发现，部分被试表示“小眼睛”并不明显，或是在专注听课时，“小眼睛”不会分散注意力。但另一部分被试表示，“小眼睛”会分散注意力，原因在于动态的图像会引起注意，被试的注意力更多放在思考老师为什么会看自己或别的同学上。其中一位被试说：“只有我分心的时候才会注意到它，当我投入的时候我已经注意不到了”，说明我们所选择的注视形式某种程度上符合我们期望的最佳形式。</p>
+<h3 id="5-2-被注视时学生的情绪"><a href="#5-2-被注视时学生的情绪" class="headerlink" title="5.2 被注视时学生的情绪"></a>5.2 被注视时学生的情绪</h3><p>部分被试表示，在“小眼睛”出现在自己头像框旁边时，会有紧张感、压力感和被监视感。但出乎意料的是，还有部分被试表示没有什么感受。造成不同情绪的原因可能在于不同被试的个人特征和学习方式的不同，一些被试表示在线下教学时，老师的关注就不会造成紧张，还有一些被试表示，自己会更关注教学内容，因此不太关注老师的目光。</p>
+<h3 id="5-3-对教师注视可视化的态度"><a href="#5-3-对教师注视可视化的态度" class="headerlink" title="5.3 对教师注视可视化的态度"></a>5.3 对教师注视可视化的态度</h3><p>与我们的期待相反，大多数被试并不喜欢在直播网课中将教师对学生的注视可视化。原因可能与被试大部分是大学生或研究生有关，他们的学习自主性较高，不需要老师的目光作为监督工具。一些被试表示想按照自己的节奏和方式学习，不希望老师关注自己。还有被试表示，老师的注视会导致自己的分心。只有一小部分被试表示喜欢，因为老师的注视可以监督自己学习。由此也可看出学习体验量表不显著的其中一个原因，即被试普遍表示不喜欢这种形式，可视化教师的注视信息只能从增加紧张和压力的方面监督学生，并不能调动学生的积极情绪。</p>
+<h3 id="5-4-对学生行为的影响"><a href="#5-4-对学生行为的影响" class="headerlink" title="5.4 对学生行为的影响"></a>5.4 对学生行为的影响</h3><p>教师的注视信息对学生的行为有影响。部分被试表示，当自己被注视时，会花时间思考自己为什么会引起老师的注意，这反而造成了他们的分心。还有部分被试表示会更注重自己在老师眼中的形象，会让自己表现得很专注。当老师在看其他同学时，部分被试表示，自己的注意力也会被吸引过去，想看看老师为什么看其他同学。虽然被试的这些行为不是我们期待的，但是也符合真实场景。</p>
+<h3 id="5-5-其他注视形式"><a href="#5-5-其他注视形式" class="headerlink" title="5.5 其他注视形式"></a>5.5 其他注视形式</h3><p>在访谈中，被试还表达了对其他注视形式的设想，比如：1. 只显示教师与自己的注视信息。弱化与其他同学的互动感，可能一定程度上能缓解紧张感和压迫感。2. 当自己被注视时，老师的头像放大。3. 其他的几何形式，比如进度条的形式或圆点的形式。这些形式可以作为下一阶段的研究重点。</p>
+<h2 id="6-局限"><a href="#6-局限" class="headerlink" title="6 局限"></a>6 局限</h2><p>本研究存在以下局限：首先，由于样本数量较少，被试间年级与专业差异较大，可能对实验结果有一定影响，后续研究需充分考虑被试的专业背景及年级分布。其次，本研究在实验室环境下进行，每组人数仅有三人，和真实网课环境及人数条件存在一定的差异；且直播讲课时不能保证每组实验的讲课效果完全一致，同时注视信息“小眼睛”为老师用鼠标实时控制，有注视信息的每组注视效果可能有差异，因此实验推广到真实的网课环境中仍需进一步探索和验证。此外，“小眼睛”的注视形式不一定是最优的设计方案，如果先进行不同注视形式的效果测评可能对本实验会更有帮助。</p>
+<h2 id="7-结论与展望"><a href="#7-结论与展望" class="headerlink" title="7 结论与展望"></a>7 结论与展望</h2><p>本研究探究了在线直播课程学习中可视化教师的注视信息对学生的影响。结果表明，以“小眼睛”的形式将教师的注视信息可视化对学习者的社会存在感有显著影响，对学习者的学习体验总体上无显著影响，但参与度有所提高；同时注视信息对学习者的认知负荷及注意力分配均无显著影响。</p>
+<p>具体而言，将教师的注视信息可视化是增加在线直播课程中师生之间非言语交流的途径，这种注视信息能提高学生的社会存在感和参与度，但同时这种“可视化的目光”与“开启的摄像头”增加了学生“被监督”的感受，与大学生相比，可能对更加需要监管的中小学生更有效果。从主观感受中看，直播网课中，注视信息显示在提问等互动环节中能够增加学生与老师的交流感，这一定程度上弥补了线上课程中非言语交流的缺失。</p>
+<p>没有增加学习者认知负荷的结果说明，注视信息的出现没有对学习者理解屏幕内容造成太大影响，但研究也未发现注视信息对学习体验的影响差异，这可能是因为量表中学习动机维度的题项占大多数（60%），而注视信息对学习动机这种个人差异较大、并与课程兴趣相关的因素并不能造成显著的影响；且师生互动维度主要与老师的教学方式是否让人投入相关，故对前两个维度影响不大；而在参与度（即付出更多努力理解学习内容）上，因为注视信息使学习者有被监督感，故有显著影响。</p>
+<p>注视信息的可视化呈现不仅为了增加师生之间的交流，还有提醒、监督的功能，但本研究并未发现注视信息对学习者注意力分配的影响差异，这可能是因为本研究设计的注视形式较为简单，没有吸引学习者的过多关注，但同时也说明该形式没有分散学习者的注意力。</p>
+<p>在教育信息化的时代，利用在线平台完成直播授课与学习得到越来越多的关注。未来的线上直播课程中，可以考虑将可视化的注视信息引入互动环节，提高学习者的社会存在感，增加有效的互动，从而有助于学习者更好地与老师交流。在后续的研究中，还有不同的注视信息呈现形式对学习者的影响，人数较多的在线网课的注视形式如何呈现，以及未开启摄像头时的注视信息与开启摄像头时的注视信息对学习者的影响是否存在差异等问题需要进一步探索与研究。</p>
+<h2 id="8-致谢"><a href="#8-致谢" class="headerlink" title="8 致谢"></a>8 致谢</h2><p>感谢我们的指导老师武汇岳对这项研究的指导与帮助，感谢中山大学传播与设计学院提供的实验环境与眼动仪设备，以及在实验环节中的所有参与者。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>\1. Argyle, M. 1967.The Psychology of Interpersonal Behaviour. [M]. London: Penguin Books.</p>
+<p>\2. Argyle, M. &amp; Cook, M. 1976. Gaze and mutual gaze. [M]. London: Cambridge University Press.</p>
+<p>\3. Chih-Fan Hsu, Yu-Shuen Wang, Chin-Laung Lei, and Kuan-Ta Chen. 2019. Look at Me! Correcting Eye Gaze in Live Video Communication.[J]. ACM Trans. Multimedia Comput. Commun. Appl. 15, 2, Article 38 (June 2019), 21.</p>
+<p>\4. Saori Yamamoto, Nazomu Teraya, Yumika Nakamura, Narumi Watanabe, Yande Lin, Mayumi Bono, and Yugo Takeuchi. 2012. Simple multi-party video conversation system focused on participant eye gaze: “Ptolemaeus” provides participants with smooth turn-taking. [J].In <strong>Proceedings of the 4th Workshop on Eye Gaze in Intelligent Human Machine Interaction (Gaze-In ‘12).</strong> Association for Computing Machinery, New York, NY, USA, Article 15, 1–3.</p>
+<p>\5. E. M. Tapia, S. S. Intille, J. R. Rebula, and S. Stoddard. 2003. Concept and partial prototype video: Ubiquitous video communication with the perception of eye contact. [J]. In <strong>Proceedings of the UBICOMP 2003 Video Program</strong></p>
+<p>\6. Robert Johansen. 1988. GroupWare: Computer Support for Business Teams. [J]. The Free Press, USA.</p>
+<p>\7. James V. Sherwood. 1987. Facilitative Effects of Gaze upon Learning. [J]. Perceptual and Motor Skills.64, 3 (June 1987) ,1275-1278</p>
+<p>\8. Wang H, Pi Z, Hu W. 2019. The instructor’s gaze guidance in video lectures improves learning. [J]. Journal of Computer Assisted Learning. 2019,35(1):42-50. </p>
+<p>\9. 杨九民. 教学视频中教师目光作用：基于眼动的证据.[J].中国电化教育. 2020.09, 404:22-28</p>
+<p>\10. Sharma, K., D’Angelo, S., Gergle, D., &amp; Dillenbourg, P. 2016. Visual augmentation of deictic gestures in MOOC videos.[J]. In 12th International Conference of the Learning Sciences, ICLS 2016: Transforming Learning, Empowering Learners, Proceedings (Vol. 1, pp. 202-209). International Society of the Learning Sciences (ISLS).</p>
+<p>\11. Sharma, K., Jermann, P., &amp; Dillenbourg, P. 2015. Displaying Teacher’s Gaze in a MOOC: Effects on Students’ Video Navigation Patterns.[J]. EC-TEL.</p>
+<p>\12. Nancy Yao, Jeff Brewer, Sarah D’Angelo, Mike Horn, and Darren Gergle. 2018. Visualizing Gaze Information from Multiple Students to Support Remote Instruction. [J]. In <strong>Extended Abstracts of the 2018 CHI Conference on Human Factors in Computing Systems (CHI EA ‘18)</strong>. Association for Computing Machinery, New York, NY, USA, Paper LBW051, 1–6.</p>
+<p>\13. Špakov O., Niehorster D., Istance H., Räihä KJ., Siirtola H. 2019. Two-Way Gaze Sharing in Remote Teaching.[J]. In: Lamas D., Loizides F., Nacke L., Petrie H., Winckler M., Zaphiris P. (eds) Human-Computer Interaction – INTERACT 2019. INTERACT 2019. Lecture Notes in Computer Science, vol 11747.</p>
+<p>\14. Yanxia Zhang, Ken Pfeuffer, Ming Ki Chong, Jason Alexander, Andreas Bulling, and Hans Gellersen. 2017. Look Together: Using Gaze for Assisting Co-located Collaborative Search.[J]. Personal Ubiquitous Comput. 21, 1 (Feb. 2017), 173–186. DOI:</p>
+<p>\15. Joshua Newn, Eduardo Velloso, Fraser Allison, Yomna Abdelrahman, and Frank Vetere. 2017. Evaluating Real-Time Gaze Representations to Infer Intentions in Competitive Turn-Based Strategy Games.[J]. In <strong>Proceedings of the Annual Symposium on Computer-Human Interaction in Play (CHI PLAY ‘17).</strong> Association for Computing Machinery, New York, NY, USA, 541–552.</p>
+<p>\16. Kristen Betts. 2009. Lost in translation: Importance of effective communication in online education. [J]. Online Journal of Distance Learning Administration 12, 2(2009).</p>
+<p>\17. Kshitij Sharma, Sarah D’Angelo, Darren Gergle, and Pierre Dillenbourg. 2016. Visual Augmentation of Deictic Gestures in MOOC videos. [J]. In <strong>ICLS’16. ACM.</strong></p>
+<p>\18. Kshitij Sharma, Patrick Jermann, and Pierre Dillenbourg. 2014. “With-me-ness”: A gaze-measure for students’ attention in MOOCs. [J]. In <strong>ICLS’14.</strong></p>
+<p>\19. Susan E Brennan, Xin Chen, Christopher A Dickinson, Mark B Neider, and Gregory J Zelinsky. 2008. Coordinating cognition: The costs and benefits of shared gaze during collaborative search. [J]. Cognition. 106, 3 (2008), 1465–1477.</p>
+<p>\20. Sarah D’Angelo and Darren Gergle. 2016. Gazed and Confused: Understanding and Designing Shared Gaze for Remote Collaboration. [J]. In <strong>Proceedings ofthe CHI confernece. ACM, 2492–2496.</strong></p>
+<p>\21. Bertrand Schneider and Roy Pea. 2013. Real-time mutual gaze perception enhances collaborative learning and collaboration quality. [J]. International Journal of Computer-Supported Collaborative Learning 8, 4 (2013), 375–397.</p>
+<p>\22. Roel Vertegaal. 1999. The GAZE groupware system: mediating joint attention in multiparty communication and collaboration. [J]. In <strong>Proceedings ofthe CHI conference. ACM, 294–301.</strong></p>
+<p>\23. Horton D,Richard Wohl R. Mass Communication and Para-Social Interaction[J]. Psychiatiy, 1956, 19(3):215-229.</p>
+<p>\24. Dibble J L, Hartmann T, Rosaen S F. Parasocial interaction and parasocial relationship: Conceptual clarification and a critical assessment of measures[J]. Human Communication Research,2016, 42(1):21-44.</p>
+<p>\25. Wang H , Pi Z , Hu W . The instructor’s gaze guidance in video lectures improves learning[J]. Journal of Computer Assisted Learning, 2019, 35(1):42-50.</p>
+<p>\26. Stull, AT (Stull, Andrew T.); Fiorella, L (Fiorella, Logan); Gainer, MJ (Gainer, Morgan J.); Mayer, RE (Mayer, Richard E.). Using transparent whiteboards to boost learning from online STEM lectures.computers &amp; education. [J]. 120.(2018).146-159</p>
+<p>\27. 陈闽楠. 教学视频中教师面部表情和眼睛注视对学习者学习的影响[D].华中师范大学,2020.</p>
+<p>\28. Stull, A. T., Fiorella, L., Gainer, M. J., &amp; Mayer, R. E. 2018. Using transparent whiteboards to boost learning from online STEM lectures. [J].  Computers &amp; Education, 120, 146–159.</p>
+<p>\29. Paas FG, Van Merriënboer JJ, Adam JJ. Measurement of cognitive load in instructional research. [J]. Percept Mot Skills. 1994 Aug;79(1 Pt 2):419-30.</p>
+<p>\30. 曹建霞,傅安娜,王锐,周莉萍,黄磊.教学视频中教师呈现方式对学习者社会存在感和学习效果的影响[J].现代教育技术,2017,27(07):75-81.</p>
+<p>❤封面图源：<a target="_blank" rel="noopener" href="https://www.zcool.com.cn/u/19816151">用户名已被占用_</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">羽树</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2021/02/01/%E6%8E%A2%E7%A9%B6%E5%9C%A8%E7%BA%BF%E7%9B%B4%E6%92%AD%E8%AF%BE%E7%A8%8B%E4%B8%AD%E5%8F%AF%E8%A7%86%E5%8C%96%E6%95%99%E5%B8%88%E7%9A%84%E6%B3%A8%E8%A7%86%E4%BF%A1%E6%81%AF%E5%AF%B9%E5%AD%A6%E7%94%9F%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BD%B1%E5%93%8D/">http://example.com/2021/02/01/%E6%8E%A2%E7%A9%B6%E5%9C%A8%E7%BA%BF%E7%9B%B4%E6%92%AD%E8%AF%BE%E7%A8%8B%E4%B8%AD%E5%8F%AF%E8%A7%86%E5%8C%96%E6%95%99%E5%B8%88%E7%9A%84%E6%B3%A8%E8%A7%86%E4%BF%A1%E6%81%AF%E5%AF%B9%E5%AD%A6%E7%94%9F%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BD%B1%E5%93%8D/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">羽树.🌱</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AE%BA%E6%96%87/">论文</a><a class="post-meta__tags" href="/tags/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/">人机交互</a><a class="post-meta__tags" href="/tags/%E7%9C%BC%E5%8A%A8%E4%BB%AA/">眼动仪</a></div><div class="post_share"><div class="social-share" data-image="https://tziooo-1304905718.cos.ap-guangzhou.myqcloud.com/2222.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/01/31/Fetago/"><img class="next-cover" src="https://tziooo-1304905718.cos.ap-guangzhou.myqcloud.com/1.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Fetago</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/01/30/拟剧理论文献综述/" title="“拟剧理论”文献综述"><img class="cover" src="https://flomo.oss-cn-shanghai.aliyuncs.com/file/2021-01-31/8963/faebfe4105094b6b04571124715d3d98.jpeg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-30</div><div class="title">“拟剧理论”文献综述</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BC%95%E8%A8%80"><span class="toc-text">1 引言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E5%9C%A8%E7%BA%BF%E6%95%99%E5%AD%A6%E8%83%8C%E6%99%AF%E6%8F%8F%E8%BF%B0"><span class="toc-text">1.1 在线教学背景描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E7%9C%BC%E5%8A%A8%E8%BF%BD%E8%B8%AA%E6%8A%80%E6%9C%AF"><span class="toc-text">1.2 眼动追踪技术</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%9B%B8%E5%85%B3%E5%B7%A5%E4%BD%9C"><span class="toc-text">2 相关工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E8%A7%86%E9%A2%91%E9%80%9A%E4%BF%A1%E4%B8%AD%E7%9C%BC%E7%A5%9E%E4%BA%A4%E6%B5%81%E4%BF%A1%E6%81%AF%E4%BC%A0%E8%BE%93%E7%9A%84%E7%BC%BA%E5%A4%B1"><span class="toc-text">2.1视频通信中眼神交流信息传输的缺失</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E5%9F%BA%E4%BA%8E%E7%9C%BC%E5%8A%A8%E8%BF%BD%E8%B8%AA%E7%9A%84%E6%B3%A8%E8%A7%86%E5%8F%AF%E8%A7%86%E5%8C%96%E4%B8%8E%E5%9C%A8%E7%BA%BF%E6%95%99%E5%AD%A6"><span class="toc-text">2.2 基于眼动追踪的注视可视化与在线教学</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E6%B3%A8%E8%A7%86%E5%BD%A2%E5%BC%8F"><span class="toc-text">2.3 注视形式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%BD%93%E5%89%8D%E7%A0%94%E7%A9%B6"><span class="toc-text">3 当前研究</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%AE%9E%E9%AA%8C%E8%AE%BE%E8%AE%A1"><span class="toc-text">3.1 实验设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E8%A2%AB%E8%AF%95"><span class="toc-text">3.2 被试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E5%AE%9E%E9%AA%8C%E6%9D%90%E6%96%99%EF%BC%8C%E8%AE%BE%E5%A4%87%E5%92%8C%E7%8E%AF%E5%A2%83"><span class="toc-text">3.3 实验材料，设备和环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E6%B3%A8%E8%A7%86%E5%BD%A2%E5%BC%8F%E8%AE%BE%E8%AE%A1"><span class="toc-text">3.4 注视形式设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E5%AE%9E%E9%AA%8C%E5%8F%98%E9%87%8F%E4%B8%8E%E6%B5%8B%E9%87%8F"><span class="toc-text">3.5 实验变量与测量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-%E5%AE%9E%E9%AA%8C%E6%B5%81%E7%A8%8B"><span class="toc-text">3.6 实验流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="toc-text">4.实验结果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1%E5%AD%A6%E4%B9%A0%E4%BD%93%E9%AA%8C"><span class="toc-text">4.1学习体验</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E7%A4%BE%E4%BC%9A%E5%AD%98%E5%9C%A8%E6%84%9F"><span class="toc-text">4.2 社会存在感</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E8%AE%A4%E7%9F%A5%E8%B4%9F%E8%8D%B7"><span class="toc-text">4.3 认知负荷</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-%E6%B3%A8%E6%84%8F%E5%8A%9B%E5%88%86%E9%85%8D"><span class="toc-text">4.4 注意力分配</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E8%AE%A8%E8%AE%BA"><span class="toc-text">5 讨论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1%E6%B3%A8%E8%A7%86%E4%BF%A1%E6%81%AF%E6%98%AF%E5%90%A6%E4%BC%9A%E5%88%86%E6%95%A3%E5%AD%A6%E7%94%9F%E6%B3%A8%E6%84%8F%E5%8A%9B"><span class="toc-text">5.1注视信息是否会分散学生注意力</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E8%A2%AB%E6%B3%A8%E8%A7%86%E6%97%B6%E5%AD%A6%E7%94%9F%E7%9A%84%E6%83%85%E7%BB%AA"><span class="toc-text">5.2 被注视时学生的情绪</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-%E5%AF%B9%E6%95%99%E5%B8%88%E6%B3%A8%E8%A7%86%E5%8F%AF%E8%A7%86%E5%8C%96%E7%9A%84%E6%80%81%E5%BA%A6"><span class="toc-text">5.3 对教师注视可视化的态度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-%E5%AF%B9%E5%AD%A6%E7%94%9F%E8%A1%8C%E4%B8%BA%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="toc-text">5.4 对学生行为的影响</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-%E5%85%B6%E4%BB%96%E6%B3%A8%E8%A7%86%E5%BD%A2%E5%BC%8F"><span class="toc-text">5.5 其他注视形式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%B1%80%E9%99%90"><span class="toc-text">6 局限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E7%BB%93%E8%AE%BA%E4%B8%8E%E5%B1%95%E6%9C%9B"><span class="toc-text">7 结论与展望</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E8%87%B4%E8%B0%A2"><span class="toc-text">8 致谢</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text">参考文献</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 羽树</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})</script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script></div></body></html>
